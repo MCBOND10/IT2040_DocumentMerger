@@ -80,7 +80,10 @@ namespace DocumentMerger
                 }
             }
 
-            Console.WriteLine("\nYour file, {0}, was saved!", mergefile);
+            int count = 0;
+            string textcount = new System.IO.StreamReader(path3).ReadToEnd().Replace("\r\n", "\r");
+            count = textcount.Length;
+            Console.WriteLine("\nYour file, {0}, was saved! The document contains {1} characters.", mergefile, count);
             Console.ReadKey();
             
 

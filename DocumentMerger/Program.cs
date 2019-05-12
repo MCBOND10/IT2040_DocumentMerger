@@ -44,7 +44,7 @@ namespace DocumentMerger
                 Console.WriteLine("Enter the name of the second file you want to merge: ");
                 filename2 = Console.ReadLine();
                 fpath2 = @"C:\Users\MCB10\Desktop\School Work\IT2040\Projects\Mod6\IT2040_DocumentMerger\{0}.txt";
-                path2 = string.Format(fpath1, filename2);
+                path2 = string.Format(fpath2, filename2);
 
                 if (!File.Exists(path2))
                 {
